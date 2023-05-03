@@ -12,4 +12,11 @@ const team = [
 
 /******************   INIT    ******************/
 
+// Print team in console
+console.log("OUR TEAM");
+for (const key in team) {
+    console.log("👉 NAME:", `${team[key].name}; ` + "ROLE:", `${team[key].role}; ` + "IMAGE:", `${team[key].img}.` );
+}
+
+
 /******************  EVENTS   ******************/
