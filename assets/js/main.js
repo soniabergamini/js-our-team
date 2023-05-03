@@ -20,17 +20,16 @@ const main = document.querySelector("main");
 let workerInfo = "";
 let card;
 
-
 /******************   INIT    ******************/
 
 // Print team in console and on web page
 console.log("OUR TEAM");
 for (const key in team) {
-    workerInfo = `NAME: ${team[key].name}; ROLE: ${team[key].role}; IMAGE: ${team[key].img}.`;
-    console.log("👉 " + workerInfo);
-    card = createElement("div", "card", `${workerInfo}`);
-    main.appendChild(card);
+    workerInfo = `NAME: ${team[key].name};  ROLE: ${team[key].role}`;
+    console.log("👉 " + workerInfo + `IMAGE: ${team[key].img}.`);
+    card = createElement("div", "card", "");
+    card.style.backgroundImage = `url(./assets/img/${team[key].img})`;
+    cardText = createElement("span", "cardText", `${ workerInfo }`);
+    card.append(cardText);
+    main.append(card);
 }
-
-
-/******************  EVENTS   ******************/
