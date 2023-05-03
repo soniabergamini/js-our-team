@@ -59,14 +59,10 @@ h1 {
 }
 
 /* MAIN STYLE */
-main {
-    height: calc(100% - 5rem);
-}
-
 .card {
     border: 1px solid var(--green);
     width: calc(100% / 3);
-    height: 300px;
+    height: 400px;
     background-size: cover;
     display: flex;
     justify-content: center;

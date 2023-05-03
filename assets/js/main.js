@@ -29,7 +29,7 @@ for (const key in team) {
     console.log("👉 " + workerInfo + `IMAGE: ${team[key].img}.`);
     card = createElement("div", "card", "");
     card.style.backgroundImage = `url(./assets/img/${team[key].img})`;
-    cardText = createElement("span", "cardText", `${ workerInfo }`);
+    cardText = createElement("span", "cardText", `${workerInfo}`);
     card.append(cardText);
     main.append(card);
 }
