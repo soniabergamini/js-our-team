@@ -27,7 +27,7 @@ let card;
 console.log("OUR TEAM");
 for (const key in team) {
     workerInfo = `NAME: ${team[key].name}; ROLE: ${team[key].role}; IMAGE: ${team[key].img}.`;
-    console.log("👉 NAME:", `${team[key].name}; ` + "ROLE:", `${team[key].role}; ` + "IMAGE:", `${team[key].img}.`);
+    console.log("👉 " + workerInfo);
     card = createElement("div", "card", `${workerInfo}`);
     main.appendChild(card);
 }
